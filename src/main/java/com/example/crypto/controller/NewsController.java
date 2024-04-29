@@ -3,6 +3,7 @@ package com.example.crypto.controller;
 import com.example.crypto.config.CoinConfig;
 import com.example.crypto.config.CoinData;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,6 +16,7 @@ import java.util.Objects;
 import static java.util.stream.Collectors.joining;
 
 @RestController
+@CrossOrigin
 public class NewsController {
     @Autowired
     CoinConfig coinConfig;
