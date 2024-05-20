@@ -1,2 +1,11 @@
 spring.application.name=crypto
 coin-api-key=
+
+# swagger-ui custom path
+springdoc.swagger-ui.path=/swagger-ui.html
+
+server.port = 443
+server.ssl.key-store = keystore.p12
+server.ssl.key-store-password = test_tomcat
+server.ssl.keyStoreType = PKCS12
+server.ssl.keyAlias = tomcat
